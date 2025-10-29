@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #212529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* hero */
+
+.hero {
+  padding: 64px 0;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.text-color-main {
+  color: rgb(0, 205, 172);
+}
+
+.hero-link-btn {
+  display: inline-block;
+  color: rgb(0, 205, 172);
+  padding: 12.8px 25.6px;
+  border: 2px solid rgb(0, 205, 172);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 32px;
+}
+
+.hero-link-btn:hover {
+  background-color: rgb(0, 205, 172);
+  color: white;
+}
+
+/* !About Section */
+.about {
+  border: none;
+  /* clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%); */
+  background-color: rgb(2, 170, 176);
+  background-image: linear-gradient(
+    135deg,
+    rgb(2, 170, 176) 0%,
+    rgb(0, 205, 172) 100%
+  );
+  height: 100vh;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.about-description {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.about-btn-resume {
+  display: inline-block;
+  color: #fff;
+  padding: 12.8px 25.6px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 32px;
+}
+
+/* !Projects Section */
+
+.projects {
+  padding: 50px 0;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.project-wrapper-image {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 300px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}

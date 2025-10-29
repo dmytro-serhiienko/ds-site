@@ -74,7 +74,7 @@ button {
   color: rgb(0, 205, 172);
   padding: 12.8px 25.6px;
   border: 2px solid rgb(0, 205, 172);
-  border-radius: 4px;
+  border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
   margin-top: 32px;
@@ -111,10 +111,11 @@ button {
 }
 
 .about-title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .about-description {
@@ -122,6 +123,7 @@ button {
   margin-top: 20px;
   margin-bottom: 16px;
   color: #fff;
+  text-align: center;
 }
 
 .about-btn-resume {
@@ -129,7 +131,7 @@ button {
   color: #fff;
   padding: 12.8px 25.6px;
   border: 2px solid #fff;
-  border-radius: 4px;
+  border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
   margin-top: 32px;
@@ -143,24 +145,99 @@ button {
 
 .projects-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .project-wrapper-image {
   position: relative;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  height: 300px;
-  margin-bottom: 10px;
+  height: 200px;
+  margin-bottom: 5px;
   overflow: hidden;
-  cursor: pointer;
+  margin-left: calc(-50vw + 50%);
 }
 
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  object-position: center;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+}
+
+/* !Contact Section */
+
+.contact {
+  padding: 50px 0;
+  background-image: linear-gradient(
+    135deg,
+    rgb(2, 170, 176) 0%,
+    rgb(0, 205, 172) 100%
+  );
+  /* clip-path: polygon(0px 15vh, 100% 0px, 100% 100%, 0px 100%); */
+}
+
+.contact > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-btn-email {
+  display: inline-block;
+  color: #fff;
+  padding: 12.8px 25.6px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 22px;
+}
+
+/* !Footer */
+.footer {
+  padding: 32px 0;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+}
+
+.footer-link {
+}
+
+.footer-use {
+  fill: #fff;
+}
+
+.footer-text {
+  margin-top: 20px;
+  color: grey;
+}
+
+.footer-name {
+  color: grey;
 }

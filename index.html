@@ -35,9 +35,9 @@
     <section class="hero section">
       <div class="container">
         <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main">Dmytro Serhiienko</span>
-          <br />
-          I'm the Unknown Developer.
+          Hi, my name is <br />
+          <span class="text-color-main">Dmytro Serhiienko</span><br />
+          I'm the Fullstack Developer.
         </h1>
         <a rel="noreferrer" class="hero-link-btn" href="#about">Know more</a>
       </div>
@@ -53,15 +53,13 @@
           class="img-about"
           height="auto"
           width="200"
-          src="./img/После люминар.jpeg"
+          src="./img/my-photo.png"
           alt="Profile Image"
         />
         <p class="about-description">
-          This is where you can describe about yourself. The more you describe
-          about yourself, the more chances you have!
-        </p>
-        <p class="about-description">
-          Extra Information about you! like hobbies and your goals.
+          I’m a Fullstack Developer building modern web products with React,
+          Next.js, Node.js, TypeScript, and JavaScript. I love clean code,
+          speed, and creating solutions that look as good as they perform.
         </p>
         <a
           rel="noreferrer"
@@ -81,31 +79,40 @@
         <h2 class="projects-title">Projects</h2>
 
         <div class="project-wrapper-image">
-          <a class="project-img-link">
+          <a
+            href="https://dmytro-serhiienko.github.io/project-EcoTote/"
+            class="project-img-link"
+          >
             <img
               alt="Project Image"
               class="project-image"
-              src="./img/project-ecotote.webp"
+              src="./img/eco.png"
             />
           </a>
         </div>
 
         <div class="project-wrapper-image">
-          <a href="">
+          <a
+            href="https://dmytro-serhiienko.github.io/goit-markup-hw-06/"
+            class=""
+          >
             <img
               alt="Project Image"
               class="project-image"
-              src="./img/project-webstudio.webp"
+              src="./img/web.png"
             />
           </a>
         </div>
 
         <div class="project-wrapper-image">
-          <a class="project-img-link">
+          <a
+            href="https://dmytro-serhiienko.github.io/Bose/"
+            class="project-img-link"
+          >
             <img
               alt="Project Image"
               class="project-image"
-              src="./img/project-bose.webp"
+              src="./img/bos.png"
             />
           </a>
         </div>
@@ -114,52 +121,63 @@
     <!-- !/END Projects Section -->
 
     <!-- **** Contact Section **** -->
-    <section id="contact">
+    <section class="contact section">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
-        </div>
+        <h2 class="contact-title">Contact</h2>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          class="contact-btn-email"
+          href="mailto:conneciones@gmail.com"
+          >Email Me</a
+        >
       </div>
     </section>
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
+    <footer class="footer">
       <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
+        <!-- <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
+        </a> -->
+
+        <ul class="footer-items">
+          <li class="footer-list">
+            <a class="footer-link" href="">
+              <svg width="30" height="30">
+                <use
+                  class="footer-use"
+                  href="./icons/icons.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-list">
+            <a class="footer-link" href="">
+              <svg width="30" height="30">
+                <use
+                  class="footer-use"
+                  href="./icons/icons.svg#icon-github"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
+        <p class="footer-text">
+          © 2025 - Template developed by
+          <a
+            class="footer-name"
+            rel="noreferrer"
+            href="https://github.com/dmytro-serhiienko"
+            target="_blank"
+            >Dmytro Serhiienko</a
           >
         </p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
   </body>
 </html>

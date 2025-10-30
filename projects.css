@@ -140,10 +140,12 @@ button {
 
 .mobile-menu-social-link {
   display: block;
+  color: #ffffff;
 }
 
 .mobile-menu-social-link svg {
-  fill: #ffffff;
+  fill: currentColor;
+  color: #ffffff;
 }
 
 /* !main */

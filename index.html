@@ -6,19 +6,18 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
     <!-- !modern-normalize -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Pathway+Gothic+One&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
     <!-- !Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -29,155 +28,123 @@
   </head>
 
   <body>
-    <div id="top"></div>
+    <header class="header" id="header">
+      <div class="header-top container">
+        <a class="header-logo" href="">Dmytro Serhiienko</a>
 
-    <!-- **** Hero Section **** -->
-    <section class="hero section">
-      <div class="container">
-        <h1 class="hero-title">
+        <button class="header-burger-menu-btn" aria-label="Open menu">
+          <svg class="header-burger-menu-svg" width="30" height="30">
+            <path
+              d="M5.333 20v-2.667h21.333v2.667h-21.333zM5.333 14.667v-2.667h21.333v2.667h-21.333z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+          <button class="mobile-menu-close" aria-label="Close menu">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <a href="#projects" class="mobile-menu-link">Projects</a>
+            <a href="#contact" class="mobile-menu-link">Contacts</a>
+          </nav>
+
+          <div class="mobile-menu-social">
+            <a href="#" class="mobile-menu-social-link">
+              <svg width="30" height="30">
+                <use href="./icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="#" class="mobile-menu-social-link">
+              <svg width="30" height="30">
+                <use href="./icons/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom container">
+        <h1 class="start-title">
           Hi, my name is <br />
-          <span class="text-color-main">Dmytro Serhiienko</span><br />
+          <span>Dmytro Serhiienko</span><br />
           I'm the Fullstack Developer.
         </h1>
-        <a rel="noreferrer" class="hero-link-btn" href="#about">Know more</a>
-      </div>
-    </section>
-    <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
-    <section class="about section" id="about">
-      <div class="container">
-        <h2 class="about-title">About me</h2>
-        <img
-          alt="Profile Image"
-          class="img-about"
-          height="auto"
-          width="200"
-          src="./img/my-photo.png"
-          alt="Profile Image"
-        />
-        <p class="about-description">
-          I’m a Fullstack Developer building modern web products with React,
-          Next.js, Node.js, TypeScript, and JavaScript. I love clean code,
-          speed, and creating solutions that look as good as they perform.
-        </p>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="about-btn-resume"
-          href="assets/resume.pdf"
-        >
-          View Resume
-        </a>
-      </div>
-    </section>
-    <!-- /END About Section -->
-
-    <!-- **** Projects Section **** -->
-    <section class="projects section" id="projects">
-      <div class="container">
-        <h2 class="projects-title">Projects</h2>
-
-        <div class="project-wrapper-image">
-          <a
-            href="https://dmytro-serhiienko.github.io/project-EcoTote/"
-            class="project-img-link"
-          >
-            <img
-              alt="Project Image"
-              class="project-image"
-              src="./img/eco.png"
-            />
-          </a>
-        </div>
-
-        <div class="project-wrapper-image">
-          <a
-            href="https://dmytro-serhiienko.github.io/goit-markup-hw-06/"
-            class=""
-          >
-            <img
-              alt="Project Image"
-              class="project-image"
-              src="./img/web.png"
-            />
-          </a>
-        </div>
-
-        <div class="project-wrapper-image">
-          <a
-            href="https://dmytro-serhiienko.github.io/Bose/"
-            class="project-img-link"
-          >
-            <img
-              alt="Project Image"
-              class="project-image"
-              src="./img/bos.png"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- !/END Projects Section -->
-
-    <!-- **** Contact Section **** -->
-    <section class="contact section">
-      <div class="container">
-        <h2 class="contact-title">Contact</h2>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="contact-btn-email"
-          href="mailto:conneciones@gmail.com"
-          >Email Me</a
+        <a rel="noreferrer" class="start-btn-know-more" href="#about"
+          >Know more</a
         >
       </div>
-    </section>
-    <!-- /END Contact Section -->
+    </header>
+
+    <main>
+      <!-- **** about Section **** -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="about-title">About Me</h2>
+          <img class="about-img" src="./img/my-photo.png" alt="" />
+          <p class="about-description">
+            I’m a Fullstack Developer who writes in JavaScript and TypeScript. I
+            use HTML, CSS, and Node.js to turn ideas into functional web
+            solutions with clean code and modern design.
+          </p>
+
+          <a class="about-link-resume" href="#" download>My Resume</a>
+        </div>
+      </section>
+    </main>
 
     <!-- **** Footer Section **** -->
     <footer class="footer">
-      <div class="container">
-        <!-- <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a> -->
+      <ul class="footer-items">
+        <li class="footer-list">
+          <a class="footer-link" href="">
+            <svg width="30" height="30">
+              <use
+                class="footer-use"
+                href="./icons/icons.svg#icon-linkedin"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list">
+          <a class="footer-link" href="">
+            <svg width="30" height="30">
+              <use
+                class="footer-use"
+                href="./icons/icons.svg#icon-github"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-        <ul class="footer-items">
-          <li class="footer-list">
-            <a class="footer-link" href="">
-              <svg width="30" height="30">
-                <use
-                  class="footer-use"
-                  href="./icons/icons.svg#icon-linkedin"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-list">
-            <a class="footer-link" href="">
-              <svg width="30" height="30">
-                <use
-                  class="footer-use"
-                  href="./icons/icons.svg#icon-github"
-                ></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <hr />
 
-        <hr />
-
-        <p class="footer-text">
-          © 2025 - Template developed by
-          <a
-            class="footer-name"
-            rel="noreferrer"
-            href="https://github.com/dmytro-serhiienko"
-            target="_blank"
-            >Dmytro Serhiienko</a
-          >
-        </p>
-      </div>
+      <p class="footer-text">
+        © 2025 - Template developed by
+        <a
+          class="footer-name"
+          rel="noreferrer"
+          href="https://github.com/dmytro-serhiienko"
+          target="_blank"
+          >Dmytro Serhiienko</a
+        >
+      </p>
     </footer>
+
+    <!-- !JavaScript -->
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -61,7 +61,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10000;
   background-color: rgba(17, 17, 17, 0.9);
   backdrop-filter: blur(10px);
   display: flex;
@@ -83,10 +83,42 @@ button {
 .header-burger-menu-btn {
   background: transparent;
   margin-left: auto;
+  position: relative;
+  z-index: 10001;
+  padding: 5px;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-burger-menu-svg {
   fill: #ffffff;
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+/* Hide burger lines when menu is active */
+.header-burger-menu-btn.active .burger-lines {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+/* Show cross lines when menu is active */
+.header-burger-menu-btn .cross-lines {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+.header-burger-menu-btn.active .cross-lines {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 /* !Mobile Menu */
@@ -109,17 +141,7 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-}
-
-.mobile-menu-close {
-  align-self: flex-end;
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 10px;
-  margin-bottom: 40px;
+  padding: 80px 20px 20px;
 }
 
 .mobile-menu-nav {
@@ -208,11 +230,12 @@ button {
 }
 
 .about-img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   /* border-radius: 50%; */
   margin-bottom: 30px;
   object-fit: cover;
+  opacity: 0.8;
 }
 
 .about-description {

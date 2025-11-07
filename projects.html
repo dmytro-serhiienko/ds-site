@@ -60,9 +60,21 @@
             />
           </svg>
         </button>
+
+        <!-- ! Menu-->
+        <nav class="header-nav">
+          <ul class="header-nav-item">
+            <li>
+              <a href="./projects.html" class="header-nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="header-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <!-- Mobile Menu -->
+      <!--? Mobile Menu -->
       <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-content">
           <nav class="mobile-menu-nav">
@@ -98,94 +110,109 @@
           </div>
         </div>
       </div>
+      <!-- ? Mobile Menu -->
     </header>
 
     <main>
       <section class="project">
-        <h2 class="project-title">Projects</h2>
-        <ul class="project-list">
-          <li class="project-item">
-            <a
-              class="project-link"
-              href="https://dmytro-serhiienko.github.io/project-EcoTote/"
-              ><img class="project-img" src="./img/eco.png" alt=""
-            /></a>
-            <ul class="project-list-btn">
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://dmytro-serhiienko.github.io/project-EcoTote/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live demo</a
-                >
-              </li>
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://github.com/dmytro-serhiienko/project-EcoTote"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Source code</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <a
-              class="project-link"
-              href="https://dmytro-serhiienko.github.io/goit-markup-hw-06/"
-              ><img class="project-img" src="./img/web.png" alt=""
-            /></a>
-            <ul class="project-list-btn">
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://dmytro-serhiienko.github.io/goit-markup-hw-06/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live demo</a
-                >
-              </li>
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://github.com/dmytro-serhiienko/goit-markup-hw-06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Source code</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <a
-              class="project-link"
-              href="https://dmytro-serhiienko.github.io/Bose/"
-              ><img class="project-img" src="./img/bos.png" alt=""
-            /></a>
-            <ul class="project-list-btn">
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://dmytro-serhiienko.github.io/Bose/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live demo</a
-                >
-              </li>
-              <li class="project-btn-item">
-                <a
-                  class="project-btn"
-                  href="https://github.com/dmytro-serhiienko/Bose"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Source code</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="project-title">Projects</h2>
+
+          <!--?  -->
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="project-content-wrap">
+                <img class="project-img" src="./img/eco-tote.png" alt="" />
+                <div class="project-text-wrap">
+                  <h3 class="project-item-title">Eco-Tote</h3>
+                  <p class="project-item-description">
+                    An eco-friendly bag brand offering stylish designs made from
+                    sustainable materials.
+                  </p>
+                </div>
+              </div>
+
+              <ul class="project-btn-list">
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://dmytro-serhiienko.github.io/project-EcoTote/"
+                    >Live demo</a
+                  >
+                </li>
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://github.com/dmytro-serhiienko/project-EcoTote"
+                    >Source code</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ? -->
+            <li class="project-item">
+              <div class="project-content-wrap">
+                <img class="project-img" src="./img/webstudio.png" alt="" />
+                <div class="project-text-wrap">
+                  <h3 class="project-item-title">WebStudio</h3>
+                  <p class="project-item-description">
+                    A web design studio specializing in creating stunning and
+                    user-friendly websites.
+                  </p>
+                </div>
+              </div>
+
+              <ul class="project-btn-list">
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://dmytro-serhiienko.github.io/goit-markup-hw-06/"
+                    >Live demo</a
+                  >
+                </li>
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://github.com/dmytro-serhiienko/goit-markup-hw-06"
+                    >Source code</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ? -->
+            <li class="project-item">
+              <div class="project-content-wrap">
+                <img class="project-img" src="./img/bose.png" alt="" />
+                <div class="project-text-wrap">
+                  <h3 class="project-item-title">Bose</h3>
+                  <p class="project-item-description">
+                    A premium audio brand known for its high-quality headphones
+                    and speakers.
+                  </p>
+                </div>
+              </div>
+
+              <ul class="project-btn-list">
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://dmytro-serhiienko.github.io/Bose/"
+                    >Live demo</a
+                  >
+                </li>
+                <li class="project-btn-item">
+                  <a
+                    class="project-btn-link"
+                    href="https://github.com/dmytro-serhiienko/Bose"
+                    >Source code</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- **** Footer Section **** -->
